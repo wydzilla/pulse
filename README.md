@@ -3,8 +3,9 @@ Attempt to detect human pulse from video stream.
 
 Summary of algo:
 for every frame in stream:
-- detect interior of face in video frame
-- calculate sum of red channel over detected range
+- Create laplacian pyramid. And for every level:
+-- detect interior of face in video frame
+-- calculate sum of red channel over detected range
 
 In this way, funtion over time is created.
 Apply fft to obtain frequency image of function.
